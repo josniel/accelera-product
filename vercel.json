@@ -1,8 +1,5 @@
 {
-  "framework": null,
-  "buildCommand": "",
-  "public": false,
-  "github": {
-    "enabled": false
-  }
+  "buildCommand": "pnpm install --frozen-lockfile && pnpm --filter ./frontend/app build-deps && pnpm --filter ./frontend/app build",
+  "outputDirectory": "frontend/app/out",
+  "rootDirectory": "."
 }
